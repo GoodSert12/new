@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nume Magazin</title>
+    <link rel="stylesheet" href="/pages/produse/produs/Centura1/produs.css" />
+    <link rel="icon" href="/asset/useflull images/logo_ico.ico" />
+  </head>
+
+  <body>
+    <nav>
+      <div>
+        <img src="/asset/useflull images/logo_black.jpg" class="logo" alt="" />
+      </div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="/pages/index/index.html">ACASA</a></li>
+        <li><a href="/pages/produse/produse.html">PRODUSE</a></li>
+        <li><a href="/pages/contact/contact.html">CONTACT</a></li>
+        <li>
+          <div class="cos1">
+            <a href="/pages/Cos/cos.html"
+              ><span style="color: black">COS</span>
+              <img src="/asset/imagini/cart.png" alt=""
+            /></a>
+            <span id="count" style="display: none"></span>
+            <span id="sum" style="display: none"></span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="parent">
+      <div class="child">
+        <img
+          src="/asset/useflull images/logo_black.jpg"
+          alt="poza_produs"
+          id="image"
+        />
+      </div>
+      <div class="child" style="margin: 0px auto">
+        <h2 id="name">Centura 1</h2>
+        <p id="price">150 Lei</p>
+
+        <form action="/pages/Cos/cos.html">
+          <select
+            id="marime"
+            class="marimi"
+            required
+            style="margin-top: 30px"
+            onchange="update()"
+          >
+            <option hidden selected>Marimi</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <br />
+          <button
+            class="marimi_but"
+            style="margin-top: 10px"
+            data-id="1"
+            data-price="150"
+            data-title="Centura 1"
+          >
+            Adauga in cos
+          </button>
+        </form>
+
+        <section>
+          <div class="center">
+            <h1>SPECIFICATII</h1>
+          </div>
+          <div>
+            <ol>
+              <li>-Microfibră</li>
+              <li>-Cusătură dublă de-a lungul marginilor</li>
+              <li>-Grosime:13mm</li>
+              <li>-Latime:10cm</li>
+            </ol>
+          </div>
+        </section>
+
+        <section>
+          <div style="float: left">
+            <h2>Tabel marimi</h2>
+            <table>
+              <tr>
+                <td>Marime</td>
+                <td>Talie</td>
+                <td>Lungime</td>
+              </tr>
+              <tr>
+                <td>XS</td>
+                <td>60-71 cm</td>
+                <td>83 cm</td>
+              </tr>
+              <tr>
+                <td>S</td>
+                <td>71-81 cm</td>
+                <td>91 cm</td>
+              </tr>
+              <tr>
+                <td>M</td>
+                <td>81-91 cm</td>
+                <td>101 cm</td>
+              </tr>
+              <tr>
+                <td>L</td>
+                <td>91-101 cm</td>
+                <td>111 cm</td>
+              </tr>
+              <tr>
+                <td>XL</td>
+                <td>101-111 cm</td>
+                <td>121cm</td>
+              </tr>
+              <tr>
+                <td>XXL</td>
+                <td>111-121 cm</td>
+                <td>132 cm</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <div class="wave">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <div class="aux">
+        <ul class="social_icon">
+          <li>
+            <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+          </li>
+          <li>
+            <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a href=""><ion-icon name="logo-tiktok"></ion-icon></a>
+          </li>
+        </ul>
+        <div class="aux1">
+          <a href="/pages/footer_links/privacy_policy/privacy_policy.html"
+            >Privacy policy</a
+          >
+          <a href="/pages/contact/contact.html">Contact</a>
+          <a href="/pages/footer_links/terms/terms.html">Terms & License</a>
+        </div>
+        <p class="aux2">©2023 nume brand | All Rights Reserved</p>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      function update() {
+        var select = document.getElementById("marime");
+        var output = select.options[select.selectedIndex].textContent;
+        localStorage.setItem("marimea", output);
+      }
+
+      update();
+    </script>
+    <script>
+     
+      
+    </script>
+
+    <script src="/pages/produse/produs/Centura1/produs.js"></script>
+    <script src="/pages/script.js"></script>
+  </body>
+</html>

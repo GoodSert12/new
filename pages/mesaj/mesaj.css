@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto",sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+a:visited,a:active { 
+  color: white; 
+  text-decoration: none; 
+}
+h1{
+  font-size: 28px;
+  
+  margin-top:200px ;
+}
+
+.center{
+  text-align: center;
+}
+
+button{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+button:hover{
+  background-color: rgba(37, 37,37);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: black;
+  }
+  
+  /* Scrollbar END*/
+
+  @media screen and (max-width: 768px){
+    .center > h1{
+      font-size: 20px;
+      margin: 0px auto;
+      margin-top: 150px;
+    }
+  }
